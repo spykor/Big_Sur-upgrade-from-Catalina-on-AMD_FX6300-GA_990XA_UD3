@@ -1,6 +1,6 @@
 # Succes!!! Upgrade from Catalina to Big Sur on a FX-6300 cpu and Gigabyte 990XA-UD3 motherboard, with audio and everything 
  
- System Configuration
+ **System Configuration**
 
      Gigabyte 990XA-UD3 motherboard
 
@@ -16,7 +16,7 @@
 
      Various HDDs and SSDs with Windows 10, Linux and OS X / macOS systems (Sierra, Catalina)
 
- Background
+ **Background**
 
  After succesfully installing and running Catalina on the above system, it was time to try and upgrade to Big Sur.
 
@@ -26,7 +26,7 @@
 
  The EFI provided by the author of the post worked flawlessly with just a minor adjustment for the number of CPUs in Kernel patches as per instructions in https://github.com/AMD-OSX/AMD_Vanilla/tree/master
 
- Prerequisites
+ **Prerequisites**
 
    Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.). Get info and necessary files from https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#starting-point
 
@@ -44,11 +44,12 @@
 
 Instructions can be found in https://kaneis.wordpress.com/2022/06/15/success-big-sur-on-amd-fx-6300-ga-990xa-ud3-everything-working-almast-including-audio-voodoohda-kext-in-library-extensions/
 
- Post Install
+ **Post Install**
 
  Reboot into the new system disk (Big Sur)
 
  Everything (but Sleep and proper Shutdown) should be working except Audio.
+ 
  ** Fix Audio / VoodooHDA in Big Sur**
 
  To fix audio in Big Sur (using VoodooHDA kext) follow the instructions from this post https://kaneis.wordpress.com/2022/06/13/how-to-fix-voodoohda-audio-for-amd-fx-cpus-ga-990xa-ud3-in-big-sur/
