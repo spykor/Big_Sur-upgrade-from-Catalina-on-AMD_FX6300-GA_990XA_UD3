@@ -29,19 +29,19 @@
 
  Prerequisites
 
-     Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.). Get info and necessary files from https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#starting-point
+   Apropriate SSDTs, kexts and patches for AMD FX CPU (SSDT-EC.aml, SSDT-USBX.aml, SSDT-XOSI.aml, Lilu.kext, VirttuslSMC.kext, etc.). Get info and necessary files from https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#starting-point
 
-     AMD Vanilla Kernel patches from https://github.com/AMD-OSX/AMD_Vanilla/tree/master
+   AMD Vanilla Kernel patches from https://github.com/AMD-OSX/AMD_Vanilla/tree/master
 
-     Opencore package https://mackie100projects.altervista.org/download-opencore-configurator/
+   Opencore package https://mackie100projects.altervista.org/download-opencore-configurator/
 
-     All necessary files are included in the EFI folder provided in the given post: https://forum.amd-osx.com/index.php?threads/success-asus-sabertooth-990fx-r2-0-fx-8350-nvidia-gtx-690-oc-0-7-6-big-sur-11-6-2-monterey-12-1.2400/
+   All necessary files are included in the EFI folder provided in the given post: https://forum.amd-osx.com/index.php?threads/success-asus-sabertooth-990fx-r2-0-fx-8350-nvidia-gtx-690-oc-0-7-6-big-sur-11-6-2-monterey-12-1.2400/
 
-     Prepare the Catalina installation for the Big Sur upgrade. Edit the OC config file to match the prerequisites for Big Sur. Edit the config.plist to the appropriate system model. I chose iMac Pro (iMacpro1,1). Upgrade the OpenCore bootloader to version 0.7.6 and download and install OpenCore configurator to match the OpenCore version.
+   Prepare the Catalina installation for the Big Sur upgrade. Edit the OC config file to match the prerequisites for Big Sur. Edit the config.plist to the appropriate system model. I chose iMac Pro (iMacpro1,1). Upgrade the OpenCore bootloader to version 0.7.6 and download and install OpenCore configurator to match the OpenCore version.
 
-     Open the above downloaded EFI folder and using the ProperTree editor make the appropriate adjustments in the config.plist regarding the number of cores of the CPU (06 in this case) for the three "algrey - Force cpuid_cores_per_package" patches and alter the Replace value only.
+   Open the above downloaded EFI folder and using the ProperTree editor make the appropriate adjustments in the config.plist regarding the number of cores of the CPU (06 in this case) for the three "algrey - Force cpuid_cores_per_package" patches and alter the Replace value only.
 
-     Changing B8000000 0000/BA000000 0000/BA000000 0090* to B8 CoreCount 0000 0000/BA CoreCount 0000 0000/BA CoreCount 0000 0090* substituting CoreCount with the hexadecimal value matching your physical core count.
+   Changing B8000000 0000/BA000000 0000/BA000000 0090* to B8 CoreCount 0000 0000/BA CoreCount 0000 0000/BA CoreCount 0000 0090* substituting CoreCount with the hexadecimal value matching your physical core count.
 
 Instructions can be found in https://kaneis.wordpress.com/2022/06/15/success-big-sur-on-amd-fx-6300-ga-990xa-ud3-everything-working-almast-including-audio-voodoohda-kext-in-library-extensions/
 
